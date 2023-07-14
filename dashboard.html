@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Responsive Multipage</title>
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./style.css"/>
+
+
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&family=Roboto:ital,wght@0,100;1,100;1,300&display=swap" rel="stylesheet">
+<link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <nav>
+      <div class="container nav_container">
+        <a href="./index.html" class="nav_logo">Blogger</a>
+        <ul class="nav_items">
+          <li><a href="blog.html">blog</a></li>
+          <li><a href="about.html">about</a></li>
+          <li><a href="services.html">services</a></li>
+          <li><a href="contact.html">contact</a></li>
+          <li><a href="signin.html">sign-in</a></li>
+          <li class="nav_profile">
+            <div class="avatar">
+              <img src="./images/avatar1.jpg" alt="">
+              </div>
+            <ul>
+              <li><a href="dashboard.html">dashboard</a></li>
+              <li><a href="logout.html">Logout</a></li>
+            </ul>
+
+        </li>
+        </ul>
+        <button type="button" name="button" id="close-btn"><i class="uil uil-times"></i></button>
+          <button type="button" name="button" id="open-btn"><i class="uil uil-bars"></i></button>
+      </div>
+    </nav>
+
+<section class="dashboard">
+  <div class="container dashboard_container">
+    <button id="show_sidebar-btn" class="sidebar_toggle"><i class="uil uil-angle-right-b"></i></button>
+    <button  id="hide_sidebar-btn" class="sidebar_toggle"><i class="uil uil-angle-left-b"></i></button>
+    <aside class="">
+      <ul>
+        <li><a href="add-post.html"><i class="uil uil-pen"></i>
+          <h5>Add Post</h5>
+        </a>
+      </li>
+
+    <li><a href="dashboard.html" class="active"><i class="uil uil-postcard"></i>
+      <h5>Manage Posts</h5>
+    </a>
+  </li>
+  <li><a href="add-user.html"><i class="uil uil-user-plus"></i>
+    <h5>Add User</h5>
+  </a>
+</li>
+<li><a href="manage-users.html" class="active"><i class="uil uil-users-alt"></i>
+  <h5>Manage Users</h5>
+</a>
+</li>
+<li><a href="add-category.html"><i class="uil uil-edit"></i>
+  <h5>Add Categories</h5>
+</a>
+</li>
+<li><a href="managege-categories.html"  ><i class="uil uil-list-ul"></i>
+  <h5>Manage Categories</h5>
+</a>
+</li>
+      </ul>
+    </aside>
+    <main>
+      <h2>Manage Users</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Title</th>
+            <th>
+              Category
+            </th>
+            <th>Edit</th>
+            <th>Delete</th>
+
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>a deserunt mollit anim id est laborum.</td>
+            <td>Wild life</td>
+            <td><a href="edit-post.html" class="btn sm">Edit</a></td>
+            <td><a href="delete-category.html" class="btn sm danger">Delete</a></td>
+<td>Yes</td>
+          </tr>
+          <tr>
+            <td>a deserunt mollit anim id est laborum.</td>
+            <td>Wild life</td>
+            <td><a href="edit-post.html" class="btn sm">Edit</a></td>
+            <td><a href="delete-category.html" class="btn sm danger">Delete</a></td>
+  <td>Yes</td>
+          </tr>
+          <tr>
+            <td>a deserunt mollit anim id est laborum.</td>
+            <td>Wild life</td>
+            <td><a href="edit-post.html" class="btn sm">Edit</a></td>
+            <td><a href="delete-category.html" class="btn sm danger">Delete</a></td>
+<td>Yes</td>
+          </tr>
+        </tbody>
+      </table>
+    </main>
+  </div>
+</section>
+<script src="./main.js">
+
+</script>
+</body>
+</html>
